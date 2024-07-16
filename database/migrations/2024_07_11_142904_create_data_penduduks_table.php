@@ -23,12 +23,13 @@ return new class extends Migration
             $table->string('rw', 3);
             $table->string('kelurahan', 255);
             $table->string('kecamatan', 255);
+            $table->string('kabupaten', 255);
             $table->string('agama', 255);
             $table->string('pendidikan', 255);
             $table->string('pekerjaan', 255);
             $table->enum('golongan_darah', ['A', 'B', 'AB', 'O']);
             $table->enum('status_perkawinan', ['Kawin', 'Belum Kawin', 'Cerai Hidup', 'Cerai Mati']);
-            $table->date('tanggal_perkawinan');
+            $table->date('tanggal_perkawinan')->nullable();
             $table->string('status_dalam_keluarga', 255);
             $table->string('kewarganegaraan', 255);
             $table->string('no_paspor', 255)->nullable();
