@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\DataPenduduk;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -20,5 +21,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'operator',
             'password' => 'operator',
         ]);
+
+        // DataPenduduk::factory()->count(100)->create();
     }
 }
