@@ -16,12 +16,12 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        // User::factory()->create([
-        //     'name' => 'Operator',
-        //     'username' => 'operator',
-        //     'password' => 'operator',
-        // ]);
+        User::factory()->create([
+            'name' => 'Operator',
+            'username' => 'operator',
+            'password' => 'operator',
+        ]);
 
-        DataPenduduk::factory()->count(100)->create();
+        // DataPenduduk::factory()->count(100)->create();
     }
 }
