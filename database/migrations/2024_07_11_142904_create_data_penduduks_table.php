@@ -31,10 +31,10 @@ return new class extends Migration
             $table->date('tanggal_perkawinan');
             $table->string('status_dalam_keluarga', 255);
             $table->string('kewarganegaraan', 255);
-            $table->string('no_paspor', 255);
-            $table->string('no_kitap', 255);
-            $table->string('nama_ayah', 255);
-            $table->string('nama_ibu', 255);
+            $table->string('no_paspor', 255)->nullable();
+            $table->string('no_kitap', 255)->nullable();
+            $table->string('nama_ayah', 255)->nullable();
+            $table->string('nama_ibu', 255)->nullable();
             $table->timestamps();
         });
     }
